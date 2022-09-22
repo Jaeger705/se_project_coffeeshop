@@ -1,0 +1,46 @@
+.menu{
+    background-color: #0a2750;
+    background-image: url(../images/background_menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.menu__title{
+font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 44px;
+line-height: 52px;
+text-align: center;
+}
+
+.menu__subtitle{
+font-family: Noto Serif;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+}
+
+.card__title{
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 30px;
+}
+
+.menu__cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.baked-goods{
+    order: 2;
+}
+
