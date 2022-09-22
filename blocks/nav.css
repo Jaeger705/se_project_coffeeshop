@@ -37,10 +37,15 @@ line-height: 30px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+    margin-left: auto;
+    margin-right: auto;
+}
+.card{
+    flex-basis: 50%;
 }
 
-.baked-goods{
-    order: 2;
+.card__list-divider{
+    border-bottom: 2px solid #ffffff;
 }
+
 
