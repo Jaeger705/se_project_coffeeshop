@@ -45,6 +45,7 @@ height: 142px;
     font-family: Noto serif;
     font-weight: normal;
     font-size: 60px;
+    display: block;
 }
 
 .nav__links{
@@ -76,6 +77,7 @@ color: #2F80ED;
     font-size: 20px;
     line-height: 30px;
     margin-left: 80px;
+    max-width: 683px;
 }
 
 .header__image{
