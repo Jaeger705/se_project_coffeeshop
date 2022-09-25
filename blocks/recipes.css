@@ -16,6 +16,7 @@
     font-style:normal;
     font-size: 44px;
     line-height: 52px;
+    margin-bottom: -24px;
 
 }
 
@@ -27,7 +28,8 @@
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 30px
+    line-height: 30px;
+    padding-top: 24px;
 }
 
 .recipe__videos{
@@ -54,4 +56,8 @@
     line-height: 30px;
     padding: 0;
     margin: 0;
+}
+
+.recipes__video-caption{
+    margin-top: 24px;
 }

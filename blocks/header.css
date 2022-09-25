@@ -9,6 +9,9 @@ header{
     height: 100vh;
     min-height: 720px;
     max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
 }
 
 .nav{
@@ -16,6 +19,8 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-right: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .header__logo{
@@ -51,6 +56,12 @@ height: 142px;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+    margin-top: 0;;
+}
+.nav__link{
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
 }
 
 
@@ -84,11 +95,12 @@ color: #2F80ED;
     line-height: 20px;
     color: #6f6f6f;
     display: flex;
-    margin-top: 208px;
-    align-items: flex-end;
+    margin-top: auto;
     justify-content: space-between;
     margin-left: 40px;
     margin-right: 40px;
+
+
 }
 /* fix the measurments for the footer */
 .header__schedule{
