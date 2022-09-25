@@ -61,3 +61,7 @@
 .recipes__video-caption{
     margin-top: 24px;
 }
+
+.recipes__iframe{
+    border: none;
+}
