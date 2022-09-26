@@ -27,6 +27,10 @@ line-height: 30px;
 text-align: center;
 margin-top: -24px;
 padding-bottom: 100px;
+display: block;
+max-width: 780px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .card__title{
