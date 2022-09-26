@@ -32,14 +32,14 @@
     padding-top: 24px;
 }
 
-.recipe__videos{
+.recipes__videos{
     display: flex;
     justify-content: center;
     column-gap: 40px;
     padding-bottom: 215px;
 }
 
-.recipe__video{
+.recipes__video{
     display: flex;
     flex-direction: column;
     
