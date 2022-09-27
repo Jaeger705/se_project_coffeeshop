@@ -20,14 +20,14 @@
         <nav class="nav">
           <img
             src="./images/logo_coffee_shop.svg"
-            class="header__logo"
+            class="logo"
             alt="Practicum Coffee Shop Logo"
           />
           <ul class="nav__links">
-            <li> <a class="nav__link" href="#menu">Menu</a></li>
-            <li> <a class="nav__link" href="#recipes">Recipes</a></li>
-            <li> <a class="nav__link" href="#book-a-table">Book a table</a></li>
-            <li> <a class="nav__link" href="#contacts">Contacts</a></li>
+            <li><a class="nav__link" href="#menu">Menu</a></li>
+            <li><a class="nav__link" href="#recipes">Recipes</a></li>
+            <li><a class="nav__link" href="#book-a-table">Book a table</a></li>
+            <li><a class="nav__link" href="#contacts">Contacts</a></li>
           </ul>
         </nav>
         <h1 class="header__title">
@@ -45,17 +45,21 @@
         />
         <div class="header__footer">
           <ul class="header__schedule">
-            <li class="header__schedule-hours">Hours:</li>
             <li class="header__schedule-hours">
-              Monday – Friday (10:00 – 19:00)
+              <p class="header__paragraph">Hours:</p>
             </li>
             <li class="header__schedule-hours">
-              Saturday – Sunday (11:00 – 18:00)
+              <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
+            </li>
+            <li class="header__schedule-hours">
+              <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
             </li>
           </ul>
-          <p class="header__address">
-            200 Success Avenue, The Town of Practicum
-          </p>
+          <div class="header__address">
+            <p class="header__paragraph">
+              200 Success Avenue, The Town of Practicum
+            </p>
+          </div>
         </div>
       </header>
       <main>
@@ -67,8 +71,8 @@
           </p>
           <div class="menu__cards">
             <div class="card">
+              <h2 class="card__title">Filter</h2>
               <ul class="card__list">
-                <li class="card__list-item"><h4 class="card__title">Filter</h4></li>
                 <li class="card__list-item">
                   Regular (12 oz)
                   <div class="card__list-divider"></div>
@@ -98,8 +102,8 @@
             </div>
 
             <div class="card">
+              <h2 class="card__title">Espresso</h2>
               <ul class="card__list">
-                <li class="card__list-item"><h4 class="card__title">Espresso</h4></li>
                 <li class="card__list-item">
                   Macchiato
                   <div class="card__list-divider"></div>
@@ -124,8 +128,8 @@
             </div>
 
             <div class="card">
+              <h2 class="card__title">Baked Goods</h2>
               <ul class="card__list">
-                <li class="card__list-item"><h4 class="card__title">Baked Goods</h4></li>
                 <li class="card__list-item">
                   Almond Croissant
                   <div class="card__list-divider"></div>
@@ -170,8 +174,6 @@
             <div class="recipes__video">
               <iframe
                 class="recipes__iframe"
-                width="480"
-                height="273"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -185,8 +187,6 @@
             <div class="recipes__video">
               <iframe
                 class="recipes__iframe"
-                width="480"
-                height="273"
                 src="https://www.youtube.com/embed/st571DYYTR8"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -201,36 +201,66 @@
         </section>
         <section class="reservation" id="book-a-table">
           <h2 class="reservation__title">Book a table</h2>
-          <form class="reservation__form">
-            <fieldset class="reservation__fieldset">
-              <label class="reservation__label" id="name">Name *</label>
-              <input type="text" class="reservation__input" placeholder="Name Surename">
-              <label class="reservation__label" id="number-of-quests">Number of quests *</label>
-              <input type="number" min="1" max="8" class="reservation__input" placeholder="1-8">
-              <label class="reservation__label" id="date-&-time">Date & time *</label>
-              <input type="datetime-local" class="reservation__input">
-              <label class="reservation__label" id="email">Your email *</label>
-              <input type="email" class="reservation__input" placeholder="email@email.com">
+          <form class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" id="name">Name *</label>
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Name Surename"
+              />
+              <label class="form__label" id="number-of-quests"
+                >Number of quests *</label
+              >
+              <input
+                type="number"
+                min="1"
+                max="8"
+                class="form__input"
+                placeholder="1-8"
+              />
+              <label class="form__label" id="date-&-time">Date & time *</label>
+              <input type="datetime-local" class="form__input" />
+              <label class="form__label" id="email">Your email *</label>
+              <input
+                type="email"
+                class="form__input"
+                placeholder="email@email.com"
+              />
             </fieldset>
-            <fieldset class="reservation__fieldset">
-              <button type="submit" class="reservation__button">Book a table</button>
+            <fieldset class="form__fieldset">
+              <button type="submit" class="form__button">Book a table</button>
             </fieldset>
-            <fieldset class="reservation__fieldset">
-              <div class="reservation__wrapper">
-                <input type="checkbox" class="reservation__checkbox" name="i-agree-with-the-terms-of-use" id="i-agree-with-the-terms-of-use">
-                <label for="i-agree-with-the-terms-of-use" class="reservation__label">I agree with the terms of use</label>
+            <fieldset class="form__fieldset">
+              <div class="form__wrapper">
+                <input
+                  type="checkbox"
+                  class="form__checkbox"
+                  name="i-agree-with-the-terms-of-use"
+                  id="i-agree-with-the-terms-of-use"
+                />
+                <label for="i-agree-with-the-terms-of-use" class="form__label"
+                  >I agree with the terms of use</label
+                >
               </div>
             </fieldset>
-            
-
           </form>
         </section>
         <section class="about">
           <h2 class="about__title">About the coffee shop</h2>
           <div class="about__content">
-            <p class="about__paragraph about__paragraph_a">Our coffee shop is located in the Practicum Library's hall. It features 6 tables and free WiFi.</p>
-            <p class="about__paragraph about__paragraph_b">Our main mission is keeping guests cozy and energized.</p>
-            <p class="about__paragraph about__paragraph_c">Besides that, we try to reduce our environmental impact — so we don't sell single-use cups. But you can buy one of our reusable cups!</p>
+            <p class="about__paragraph">
+              Our coffee shop is located in the Practicum Library's hall. It
+              features 6 tables and free WiFi.
+            </p>
+            <p class="about__paragraph">
+              Our main mission is keeping guests cozy and energized.
+            </p>
+            <p class="about__paragraph">
+              Besides that, we try to reduce our environmental impact — so we
+              don't sell single-use cups. But you can buy one of our reusable
+              cups!
+            </p>
           </div>
           <div class="about__circle"></div>
           <div class="about__circle about__circle_animation_blurred"></div>
@@ -238,13 +268,34 @@
       </main>
       <footer class="footer" id="contacts">
         <div class="footer__content">
-          <img class="footer__logo" src="./images/practicum_logo.svg" alt="Practicum Logo">
-          <ul class="footer__list">
-            <li class="footer__list-item"><h4 class="footer__social-heading">Social media</h4></li>
-            <li class="footer__list-item"><a class="footer__social-link" href="#"><img class="footer__social-icon" src="./images/facebook_white.svg" alt="Facebook Logo"/>Facebook</a></li>
-            <li class="footer__list-item"><a class="footer__social-link" href="#"><img class="footer__social-icon" src="./images/instagram_white.svg" alt="Instagram Logo"/>Instagram</a></li>
-          </ul>
-
+          <img
+            class="footer__logo"
+            src="./images/practicum_logo.svg"
+            alt="Practicum Logo"
+          />
+          <div class="footer__social">
+            <h4 class="footer__social-heading">Social media</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__social-link" href="#"
+                  ><img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt="Facebook Logo"
+                  />Facebook</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__social-link" href="#"
+                  ><img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt="Instagram Logo"
+                  />Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
         <p class="footer__copyright">© 2022 Oiziah Joyce</p>
       </footer>

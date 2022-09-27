@@ -1,74 +1,50 @@
-.menu{
-    background-color: #0a2750;
-    background-image: url(../images/background_menu.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #ffffff;
+.menu {
+  background-color: #0a2750;
+  background-image: url(../images/background_menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  box-sizing: border-box;
 }
 
-.menu__title{
-font-family: Inter;
-font-style: normal;
-font-weight: 500;
-font-size: 44px;
-line-height: 52px;
-text-align: center;
-padding: 100px 0 0 0;
-margin-top: 0;
-
+.menu__title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  padding: 100px 0 0 0;
+  margin-top: 0;
+  max-width: 780px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.menu__subtitle{
-font-family: Noto serif;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 30px;
-text-align: center;
-margin-top: -24px;
-padding-bottom: 100px;
-display: block;
-max-width: 780px;
-margin-left: auto;
-margin-right: auto;
+.menu__subtitle {
+  font-family: Noto serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 100px;
+  display: block;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.card__title{
-font-family: Inter;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 30px;
-margin: 0 0 32px 0;
+.menu__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 100px;
+  padding-bottom: 100px;
 }
-
-.menu__cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 100px;
-    padding-bottom: 100px;
-}
-.card{
-    flex-basis: 50%;
-    max-width: 600px;
-}
-
-.card__list{
-    list-style: none;
-}
-
-.card__list-item{
-    display:flex;
-    margin: 0 0 16px 0;
-}
-.card__list-divider{
-    border-bottom: solid 2px #ffffff;
-    flex-grow: 1;
-    
-}
-
-
