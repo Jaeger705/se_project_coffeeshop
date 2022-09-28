@@ -24,7 +24,7 @@
 
 .about__content {
   margin: 119px 80px 173px auto;
-  font-family: Noto serif;
+  font-family: "Noto Serif", "Arial", serif;
 
   font-style: normal;
 
@@ -38,7 +38,7 @@
 }
 
 .about__paragraph {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .about__paragraph:first-of-type {
@@ -46,12 +46,13 @@
 }
 
 .about__paragraph:last-of-type {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
 .about__paragraph:nth-of-type(2n) {
   margin-top: 0;
-  margin-bottom: 0;
+  
 }
 .about__circle {
   width: 426px;

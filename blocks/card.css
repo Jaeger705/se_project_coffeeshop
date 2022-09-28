@@ -21,12 +21,12 @@
 .card__list-item {
   display: flex;
   margin: 0 0 16px 0;
-  font-family: Noto serif;
+  font-family: "Noto Serif", "Arial", serif;
 
   font-style: normal;
 
   font-weight: normal;
-
+  
   font-size: 16px;
 
   line-height: 20px;

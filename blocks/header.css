@@ -30,14 +30,14 @@
   font-style: italic;
   color: #2f80ed;
   line-height: 72px;
-  font-family: Noto serif;
+  font-family: "Noto Serif", "Arial", serif;
   font-weight: normal;
   font-size: 60px;
   display: block;
 }
 
 .header__description {
-  font-family: Noto serif;
+  font-family: "Noto Serif", "Arial", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
